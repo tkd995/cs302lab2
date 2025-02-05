@@ -2,20 +2,19 @@
 
 
 List::List() {
-	*head = NULL;
+	head = NULL;
 	size = 0;
-
 }
 
 List::~List() {
 	while(head != NULL){
-		node n = head&;
+		Node *n = head;
 		head = head->next;
 		delete n;
 	}
 }
 void List::push_front(const std::string &s) {
-	node *n = new node;
+	Node *n = new Node;
 	n->number = stoi(s);
 	n->string = s;
 	if(!head) n->next = NULL;
