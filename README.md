@@ -1,4 +1,4 @@
-By: Ian Henson and ...
+By: Ian Henson and Michael Batchelor
 
 Desc: implementation of qsort, quick sort, merge sort, and stl sort. The merge, stl, and quick sort functions were written by Ian. Michael wrote the original quick and qsort functions.
 
@@ -26,4 +26,4 @@ Ian took his measurements using the time cmd in terminal.
 |qsort|10000000|21.724|
 |qsort|25000000|54.519|
 
-Results: The merge and stl sort increase at about the same rate, merge sort seems to run the fastest out of the two. After looking at the quick and qsort, it seems that qsort ran the fastest by a reasonable margin too. I speculate this was due to an implementation error. This is about what is to be expected, this data was also fully randomized so it should replicate "real data" as much as possible.
+Results: The merge and stl sort increase at about the same rate, merge sort seems to run the fastest out of the two. After looking at the quick and qsort, it seems that qsort ran the fastest by a reasonable margin too. I speculate this was due to differences in implementation introducing error. This is about what is to be expected, this data was also fully randomized so it should replicate "real data" as much as possible.
