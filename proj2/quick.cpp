@@ -1,5 +1,4 @@
 // quick.cpp
-
 #include "volsort.h"
 
 #include <iostream>
@@ -20,7 +19,6 @@ void quick_sort(List &l, bool numeric) {
 }
 
 Node *qsort(Node *head, bool numeric) {	
-	cout<<"qsort"<<endl;
 	if(head == NULL || head->next == NULL)//Base Case: 0 or 1 element in the partition
 		return head;
 
@@ -36,7 +34,6 @@ Node *qsort(Node *head, bool numeric) {
 }
 
 void partition(Node *head, Node *pivot, Node *&left, Node *&right, bool numeric) {
-	cout<<"partition"<<endl;
 	
 	Node* leftTail = nullptr, *rightTail = nullptr;
 	/*
@@ -98,7 +95,6 @@ void partition(Node *head, Node *pivot, Node *&left, Node *&right, bool numeric)
 	if (rightTail != nullptr) rightTail->next = nullptr;
 }
 Node *concatenate(Node *left, Node *right) {
-	cout<<"cat"<<endl;
 	if(left == NULL) return right;
 
 	Node* cur = left;
