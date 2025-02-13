@@ -5,6 +5,5 @@ Desc. implementation of qsort, quick sort, merge sort, and stl sort. The merge a
 | Mode | Size | Time |
 |------|------|------|
 |      |      |      |
-|------|------|------|
 
 Discussion of Results: 
